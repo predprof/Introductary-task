@@ -1,6 +1,8 @@
 import json
 import requests
 from flask import Flask, render_template
+from flask_pymongo import PyMongo
+import flask
 
 app = Flask(__name__)
 api_key = "74326d539da14302931e141df4fc64f7"
@@ -35,5 +37,4 @@ def gifs():
 
 # app.run(debug=True)
 if __name__ == '__main__':
-    # Run the app server on localhost:4449
-    app.run('localhost', 5000)
+    app.run(host="0.0.0.0", port=8080, debug=True)
