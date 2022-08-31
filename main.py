@@ -1,8 +1,6 @@
 import json
 import requests
 from flask import Flask, render_template
-from flask_pymongo import PyMongo
-import flask
 
 app = Flask(__name__)
 api_key = "74326d539da14302931e141df4fc64f7"
@@ -19,7 +17,7 @@ def jokes():
     return render_template('jokes.html', joke=joke)
 
 
-@app.route("/memes", methods=('GET',))
+@app.route("/memes")
 def memes():
     r_memes = requests.get(f"https://api.humorapi.com/memes/random?api-key={api_key}")
     data_memes = json.loads(r_memes.text)

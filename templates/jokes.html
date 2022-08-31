@@ -1,10 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Sad? Come here!</title>
-</head>
-<body>
-    <div>{{ joke }}</div>
-</body>
-</html>
+{% extends 'base.html' %}
+{% block title %} Sad? Come here! {% endblock %}
+{% block content %}
+    <h1 align="center">Шутка прибаутка</h1>
+    <div class="center">
+        <p>{{ joke }}</p>
+<!--        <button type="save" class="btn btn-primary">Сохранить</button>-->
+    </div>
+{% endblock %}
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Sad? Come here!</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--    <div>{{ joke }}</div>-->
+<!--</body>-->
+<!--</html>-->

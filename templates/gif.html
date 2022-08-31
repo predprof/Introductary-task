@@ -1,10 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Sad? Come here!</title>
-</head>
-<body>
-    <img src={{ gif }} alt="awesome gif">
-</body>
-</html>
+{% extends 'base.html' %}
+{% block title %} Sad? Come here! {% endblock %}
+{% block content %}
+    <h1 align="center">Гифка... подходит тебе?</h1>
+    <div class="center">
+        <img src={{ gif }} width="360" height="400" alt="awesome gif">
+<!--        <button type="save" class="btn btn-primary">Сохранить</button>-->
+    </div>
+{% endblock %}
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Sad? Come here!</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--    <img src={{ gif }} alt="awesome gif">-->
+<!--</body>-->
+<!--</html>-->

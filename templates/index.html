@@ -1,17 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Sad? Come here!</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-</head>
-<body>
-    <h1>Приветствие</h1>
-    <div>Чтобы развеселиться, введи в поисковой строке параметр интересующего:</div>
-    <ul>
-        <li>рандомная шутка: <code>/jokes</code></li>
-        <li>рандомный мем: <code>/memes</code></li>
-        <li>рандомная гифка: <code>/gif</code></li>
-    </ul>
-</body>
-</html>
+{% extends 'base.html' %}
+{% block title %} Sad? Come here! {% endblock %}
+{% block content %}
+    <h1 align="center">Приветствие</h1>
+    <div class="center">
+        <p>Чтобы развеселиться, введи в поисковой строке параметр интересующего:</p>
+        <ul>
+            <li>рандомная шутка: <code>/jokes</code></li>
+            <li>рандомный мем: <code>/memes</code></li>
+            <li>рандомная гифка: <code>/gif</code></li>
+        </ul>
+        <form method="get">
+<!--            <div class="form-group">-->
+<!--                <button type="button" class="btn btn-primary">Сохранить</button>-->
+<!--            </div>-->
+        </form>
+    </div>
+{% endblock %}
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Sad? Come here!</title>-->
+<!--    <link rel="icon" href="favicon.ico" type="image/x-icon">-->
+<!--</head>-->
+<!--<body>-->
+<!--    <h1>Приветствие</h1>-->
+<!--    <div>Чтобы развеселиться, введи в поисковой строке параметр интересующего:</div>-->
+<!--    <ul>-->
+<!--        <li>рандомная шутка: <code>/jokes</code></li>-->
+<!--        <li>рандомный мем: <code>/memes</code></li>-->
+<!--        <li>рандомная гифка: <code>/gif</code></li>-->
+<!--    </ul>-->
+<!--</body>-->
+<!--</html>-->
