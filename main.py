@@ -27,7 +27,7 @@ def memes():
 
 @app.route("/gif")
 def gifs():
-    r_gifs = requests.get(f"https://api.humorapi.com/gif/search?query=dog&number=3&api-key={api_key}")
+    r_gifs = requests.get(f"https://api.humorapi.com/gif/search?number=1&api-key={api_key}")
     data_gifs = json.loads(r_gifs.text)
     gif = data_gifs['images'][0]['url']
     return render_template('gif.html', gif=gif)
